@@ -69,7 +69,7 @@ class calculator:
             die[0] , die[1] = -1 , -1
             while llc[1] >= -self.wafer_diameter/2:
 
-                while llc[0] >= -self.wafer_diameter/2 and (self.hypotenuse(llc) or self.roc(llc)):
+                while llc[0] >= -self.wafer_diameter/2:
                     
 
                     w.write(f'{tuple(die)}:{tuple(llc)}\n')
