@@ -10,10 +10,10 @@ class calculator:
                     die_width , die_height = line[8:].split("x")
                     self.die_width , self.die_height = int(die_width) , int(die_height)
                 if line.strip().startswith("DieShiftVector"):
-                    die_vector_1, die_vector_2  = line[16:21].split(",")
+                    die_vector_1, die_vector_2  = line[16:19].split(",")
                     self.die_vector = [int(die_vector_1) , int(die_vector_2)]
                 if line.strip().startswith("ReferenceDie"):
-                    center_1 , center_2 = line[14:21].split(",")
+                    center_1 , center_2 = line[14:18].split(",")
                     self.center = [int(center_1) , int(center_2)]
             print(self.wafer_diameter , self.die_width , self.die_height , self.die_vector , self.center)
         self.calc()
